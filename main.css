@@ -1,7 +1,10 @@
+body {
+    font-family: 'qatar';
+}
+
 .scoreboard {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-family: 'qatar';
 }
 
 @font-face {
@@ -52,3 +55,8 @@
     background-color: #ed1c51;
 }
 
+
+#title {
+    /* text-shadow: 0px 1px 10px gray; */
+    color: #8A1538;
+}
