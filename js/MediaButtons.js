@@ -38,6 +38,7 @@ let start = root.querySelectorAll(".mediaButtons").forEach(mediaButton => {
             console.log("RESET!");
             ticks = 0;
             isReset = !isReset;
+            paused = !paused;
         }
         
     })
