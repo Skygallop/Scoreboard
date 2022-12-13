@@ -1,5 +1,5 @@
 export default class ScoreboardView {
-    constructor(root, playerOneName, playerTwoName, onScoreChange) {
+    constructor(root, playerOneName, playerTwoName, onControlButtonClick) {
         this.root = root;
         this.root.innerHTML = `
         <div class="scoreboard">
@@ -17,5 +17,19 @@ export default class ScoreboardView {
  </div>
 </div>
         `;
+
+        this.root.querySelectorAll("scoreboard__control-button").forEach(controlButton => {
+            controlButton.addEventListener("click", () => {
+                const direction = controlButton.textContent === "-" ? "minus" : "plus";
+                const player = controlButton.closest(".scoreboard__controls").dataset.forPlayer;
+
+                onControlButtonClick(player, direction);
+            });
+        });
+    }
+
+    update(PlayerOneScore, PlayerTwoScore) {
+        this.root.querySelector(".scoreboard__score[data-for-player='one']").textContent = PlayerOneScore;
+        this.root.querySelector(".scoreboard__score[data-for-player='two']").textContent = PlayerTwoScore;
     }
 }
