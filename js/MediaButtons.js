@@ -3,6 +3,7 @@ const root = document.querySelector("#mediaGroup");
 var ticks = 0;
 
 var paused = false;
+var isReset= false;
 
 var timer = 0;
 
@@ -14,8 +15,8 @@ let start = root.querySelectorAll(".mediaButtons").forEach(mediaButton => {
         // PAUSE
         if(mediaButton.textContent == "||") {
             console.log("PAUSE!");
-            pause !== pause;
-            console.log(pause)
+            paused = !paused;
+            
         }
 
         // PLAY
@@ -24,20 +25,19 @@ let start = root.querySelectorAll(".mediaButtons").forEach(mediaButton => {
             setInterval(() => {
                 if(!paused) {
                     ticks++;
+                    // console.log(this.paused)
                     this.timer = document.getElementById("timer").textContent = ticks
                 }
                 console.log(ticks);
             }, 1000);
         }
-        
-        // STOP
-        if(mediaButton.textContent == "¶") {
-            console.log("STOP!");
-        }
+
 
         // STOP
         if(mediaButton.textContent == "↺") {
             console.log("RESET!");
+            ticks = 0;
+            isReset = !isReset;
         }
         
     })
