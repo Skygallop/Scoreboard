@@ -48,15 +48,27 @@ body {
 }
 
 .scoreboard__control-button:hover {
- background-color: #eb718f;
+    background-color: #eb718f;
 }
 
 .scoreboard__control-button:active {
     background-color: #ed1c51;
 }
 
+.mediaButtons {
+    border: none;
+    width: 5vw;
+    height: 3vh;
+}
+.mediaButtons:hover {
+    background-color: #eb718f;
+}
+.mediaButtons:active {
+    background-color: #ed1c51;
+}
 
 #title {
-    /* text-shadow: 0px 1px 10px gray; */
+    overflow: hidden;
+    text-align: center;
     color: #8A1538;
 }
