@@ -64,4 +64,4 @@ var intervalId = setInterval(() => {
 
         this.timer = document.getElementById("timer").textContent = minZero + mins + ":" + tickZero + ticks;
     }
-}, 300);
+}, 1000);
