@@ -18,10 +18,7 @@ let start = root.querySelectorAll(".mediaButtons").forEach(mediaButton => {
         // PAUSE
         if(mediaButton.textContent == "||") {
             console.log("PAUSE!");
-            // if(started) {
-                paused = !paused;
-            // }
-            
+            paused = !paused;
         }
 
          // RESET
@@ -29,7 +26,6 @@ let start = root.querySelectorAll(".mediaButtons").forEach(mediaButton => {
             console.log("RESET!");
             
             document.getElementById("timer").textContent= 0;
-            // paused = true;
             ticks = -1;
             isReset = !isReset;
         }
@@ -50,20 +46,8 @@ let start = root.querySelectorAll(".mediaButtons").forEach(mediaButton => {
 this.intervalId = setInterval(() => {
     if(!paused && started && !isReset) {
         ticks++;
-        // console.log(this.paused)
         this.timer = document.getElementById("timer").textContent = ticks;
     }
     
     console.log(ticks);
 }, 1000);
-
-
-if(isReset) {
-    
-}
-
-// pauseButton = document.querySelector("");
-
-let pause = () => {
-
-}
