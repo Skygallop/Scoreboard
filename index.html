@@ -8,12 +8,19 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" type="module"></script>
+
+	<script src="./js/Flagger.js" type="module"></script>
+
 	<div id="title">
 		<h1>QATAR</h1>
 		<h3 style="position: relative; bottom: 25px; color: #e4c45b;">SCOREBOARD</h3>
 	</div>
 
 	<h1 id="timer" style="text-align: center;">00:00</h1>
+
+	<img src="" alt="" id="teamOneFlag" width="200px">
+	<img src="" alt="" id="teamTwoFlag" width="200px">
 
 	<div id="mediaGroup" style="text-align: center;">
 		<button class="mediaButtons" style="font-weight: 1000;">||</button>
@@ -22,8 +29,6 @@
 	</div>
 
 	<!-- The actual application -->
-
-	<script src="./js/Flagger.js" type="module"></script>
 	<script src="./js/main.js" type="module"></script>
 
 	<select name="Countries" id="teamOneDrop" onchange="">
