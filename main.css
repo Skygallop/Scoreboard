@@ -84,14 +84,41 @@ body {
     font-size: 16px;
 }
 
+select {
+    appearance: none;
+    outline: 0;
+    background: #eee;
+    background-image: none;
+    color: black;
+    cursor: pointer;
+    border: none;
+    height: 25px;
+    text-align: center;
+}
 #teamOneDrop {
     position: relative;
     float: left;
     left: 20px;
+    background-color: #eee;
+    border: none;
+    appearance: none;
 }
 
 #teamTwoDrop {
     position: relative;
     float: right;
     right: 20px;
+    background-color: #eee;
+    border: none;
+    appearance: none;
+}
+#teamTwoDrop::after {
+   position: relative;
+        display: block;
+        width: 15em;
+        height: 2em;
+        line-height: 3;
+        overflow: hidden;
+        border-radius: .25em;
+        padding-bottom: 10px;
 }
