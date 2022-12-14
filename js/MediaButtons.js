@@ -26,7 +26,7 @@ let start = root.querySelectorAll(".mediaButtons").forEach(mediaButton => {
         if(mediaButton.textContent == "↺") {
             console.log("RESET!");
             
-            document.getElementById("timer").textContent= 0;
+            document.getElementById("timer").textContent= "00:00";
             ticks = 0;
             mins = 0;
             isReset = !isReset;
