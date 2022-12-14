@@ -63,7 +63,7 @@ body {
 .mediaButtons:hover {
     background-color: #eb718f;
 }
-.mediaButtons:active {
+.mediaButtons:focus {
     background-color: #ed1c51;
 }
 
