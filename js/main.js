@@ -1,9 +1,10 @@
-import ScoreboardView from "./scoreboard/ScoreboardView.js";
+import ScoreboardView from "./ScoreboardView.js";
 
 let playerOneScore = 0;
 let playerTwoScore = 0;
-const root = document.querySelector("#app");
-const view = new ScoreboardView(root, "Player One", "Player Two", (player, direction) => {
+// The id that will contain all the css stuff
+const root = document.querySelector("#scoreboard");
+let view = new ScoreboardView(root, "Player One", "Player Two", (player, direction) => {
 	const difference = direction === "minus" ? -1 : 1;
 
 	if (player === "one") {
@@ -13,4 +14,4 @@ const view = new ScoreboardView(root, "Player One", "Player Two", (player, direc
 	}
 
 	view.update(playerOneScore, playerTwoScore);
-});
+})

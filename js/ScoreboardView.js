@@ -1,7 +1,8 @@
 export default class ScoreboardView {
 	constructor(root, playerOneName, playerTwoName, onControlButtonClick) {
 		this.root = root;
-		this.root.innerHTML = `
+		/* HTML Layout */
+		root.innerHTML = `
 			<div class="scoreboard">
 				<div class="scoreboard__name scoreboard__name--one">${playerOneName}</div>
 				<div class="scoreboard__name scoreboard__name--two">${playerTwoName}</div>
@@ -17,7 +18,7 @@ export default class ScoreboardView {
 				</div>
 			</div>
 		`;
-
+		
 		this.root.querySelectorAll(".scoreboard__control-button").forEach(controlButton => {
 			controlButton.addEventListener("click", () => {
 				const direction = controlButton.textContent === "-" ? "minus" : "plus";

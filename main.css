@@ -1,7 +1,10 @@
+body {
+    font-family: 'qatar';
+}
+
 .scoreboard {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-family: 'qatar';
 }
 
 @font-face {
@@ -45,10 +48,38 @@
 }
 
 .scoreboard__control-button:hover {
- background-color: #eb718f;
+    background-color: #eb718f;
 }
 
 .scoreboard__control-button:active {
     background-color: #ed1c51;
 }
 
+.mediaButtons {
+    border: none;
+    width: 5vw;
+    height: 3vh;
+}
+.mediaButtons:hover {
+    background-color: #eb718f;
+}
+.mediaButtons:focus {
+    background-color: #ed1c51;
+}
+
+#title {
+    overflow: hidden;
+    text-align: center;
+    color: #8A1538;
+}
+
+#inputBox {
+    font-family: 'qatar';
+    position: relative;
+    top: -15px;
+    margin-left: 25vw;
+    width: 50vw;
+    height: 200px;
+    font-weight: bold;
+    font-size: 16px;
+}
