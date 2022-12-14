@@ -19,17 +19,12 @@
 
 	<h1 id="timer" style="text-align: center;">00:00</h1>
 
-	<img src="" alt="" id="teamOneFlag" width="200px">
-	<img src="" alt="" id="teamTwoFlag" width="200px">
-
-	<div id="mediaGroup" style="text-align: center;">
-		<button class="mediaButtons" style="font-weight: 1000;">||</button>
-		<button class="mediaButtons" style="font-weight: 1000;">></button>
-		<button class="mediaButtons" style="font-weight: 1000;">↺</button>
+	
+	<div class="flagContainer">
+		<img src="" alt="" id="teamOneFlag" width="200px" >
+		<img src="" alt="" id="teamTwoFlag" width="200px" >
 	</div>
-
 	<!-- The actual application -->
-	<script src="./js/main.js" type="module"></script>
 
 	<select name="Countries" id="teamOneDrop" onchange="">
 		<option value="SELECT">SELECT</option>
@@ -103,7 +98,16 @@
 		<option value="Qatar">Qatar</option>
 	</select>
 
+	<div id="mediaGroup" style="text-align: center;">
+		<button class="mediaButtons" style="font-weight: 1000;">||</button>
+		<button class="mediaButtons" style="font-weight: 1000;">></button>
+		<button class="mediaButtons" style="font-weight: 1000;">↺</button>
+	</div>
+
 	<div id="names"></div>
+
+	<script src="./js/main.js" type="module"></script>
+
 	<div id="scoreboard"></div>
 	<script src="./js/MediaButtons.js" type="module"></script>
 

@@ -5,6 +5,8 @@ body {
 .scoreboard {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 @font-face {
@@ -74,10 +76,10 @@ body {
 }
 
 #inputBox {
+    display: block;
+    margin: auto;
     font-family: 'qatar';
-    position: relative;
     top: -15px;
-    margin-left: 25vw;
     width: 50vw;
     height: 200px;
     font-weight: bold;
@@ -97,11 +99,12 @@ select {
 }
 #teamOneDrop {
     position: relative;
-    float: left;
+    /* float: left; */
     left: 20px;
     background-color: #eee;
     border: none;
     appearance: none;
+    text-align: center;
 }
 
 #teamTwoDrop {
@@ -111,45 +114,22 @@ select {
     background-color: #eee;
     border: none;
     appearance: none;
+    text-align: center;
 }
 
 #teamOneFlag {
-    position: relative;
+    position: absolute;
     box-shadow: 0px 0px 10px gray;
-    margin-left: 20px;
-    float:left;
+    margin-left: 10px;
+    float: left;
 }
 #teamTwoFlag {
-    position: relative;
+    position: absolute;
+    right: 0%;
+    margin-right: 20px;
     float: right;
 }
 
-@media screen and (min-width: 10000px) {
-    #teamOneDrop {
-        position: relative;
-        float: left;
-        left: 20px;
-        background-color: #eee;
-        border: none;
-        appearance: none;
-    }
-    
-    #teamTwoDrop {
-        position: relative;
-        float: right;
-        right: 20px;
-        background-color: #eee;
-        border: none;
-        appearance: none;
-    }
-    #teamOneFlag {
-        position: relative;
-        box-shadow: 0px 0px 10px gray;
-        margin-left: 20px;
-        /* float:left; */
-    }
-    #teamTwoFlag {
-        position: relative;
-        /* float: right; */
-    }
+.flagContainer {
+    height: 230px;
 }

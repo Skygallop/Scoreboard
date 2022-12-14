@@ -22,7 +22,7 @@ let view = new ScoreboardView(root, playerOneName, playerTwoName, (player, direc
 			console.log("TEAM ONE GOT A GOAL REVOKED!");
 			inputBox.textContent += timer.textContent + " - " + playerOneName + " (" + playerOneScore + "-" + playerTwoScore + ")\n"
 		}
-	} else {
+	} else if(player === "two"){
 		playerTwoScore = Math.max(playerTwoScore + difference, 0);
 		if(difference == 1) {
 			console.log("TEAM TWO SCORED 1 GOAL!");
