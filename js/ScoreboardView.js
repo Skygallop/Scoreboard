@@ -23,7 +23,7 @@ export default class ScoreboardView {
 			controlButton.addEventListener("click", () => {
 				const direction = controlButton.textContent === "-" ? "minus" : "plus";
 				const player = controlButton.closest(".scoreboard__controls").dataset.forPlayer;
-
+				
 				onControlButtonClick(player, direction);
 			});
 		});
