@@ -83,3 +83,15 @@ body {
     font-weight: bold;
     font-size: 16px;
 }
+
+#teamOneDrop {
+    position: relative;
+    float: left;
+    left: 20px;
+}
+
+#teamTwoDrop {
+    position: relative;
+    float: right;
+    right: 20px;
+}
