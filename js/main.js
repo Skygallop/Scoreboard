@@ -55,8 +55,8 @@ function upd () {
 		playerTwoName = document.querySelector("#teamTwoDrop").value;
 		names.innerHTML = `
 				<div class="scoreboard">
-					<div class="scoreboard__name scoreboard__name--one">${playerOneName}</div>
-					<div class="scoreboard__name scoreboard__name--two">${playerTwoName}</div>
+					<div class="scoreboard__name scoreboard__name--one" style="text-overflow:ellipsis; overflow:hidden">${playerOneName}</div>
+					<div class="scoreboard__name scoreboard__name--two" style="text-overflow:ellipsis; overflow:hidden">${playerTwoName}</div>
 				</div>
 						`;
 		clearInterval(interval);

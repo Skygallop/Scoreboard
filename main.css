@@ -143,7 +143,9 @@ select {
     height: 230px;
     /* max-height: 230px; */
 }
-
+#scoreboard {
+    font-size: 10px;
+}
 @media screen and (max-width: 1000px) {
     #teamOneFlag {
         width: 33.2%;
@@ -156,14 +158,20 @@ select {
     .flagContainer {
         height: 23vw;
     }
+    .scoreboard__name--one {
+        font-size: 3.2vw;
+    }
+    .scoreboard__name--two {
+        font-size: 3.2vw;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 501px) {
     #teamOneDrop {
-        width: 43vw;
+        width: 40%;
      }
      #teamTwoDrop {
-        width: 43vw;
+        width: 40%;
      }
 }
 img[src=""] {
