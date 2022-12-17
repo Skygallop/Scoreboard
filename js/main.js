@@ -1,5 +1,6 @@
 /*
 	Code is written like shit.
+	I'm still going to clean up this code another time!
 */
 
 import ScoreboardView from "./ScoreboardView.js";
