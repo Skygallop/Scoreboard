@@ -26,11 +26,13 @@ body {
 }
 
 .scoreboard__name--one {
-    color: #ed1c51
+    color: #ed1c51;
+    font-size: 32px;
 }
 
 .scoreboard__name--two {
-    color: #ed1c51
+    color: #ed1c51;
+    font-size: 32px;
 }
 
 .scoreboard__score {
@@ -120,15 +122,19 @@ select {
 #teamOneFlag {
     position: absolute;
     box-shadow: 0px 0px 10px gray;
-    margin-left: 10px;
+    margin-left: 350px;
     float: left;
+    width: 320px;
+    height: 200px;
 }
 #teamTwoFlag {
     position: absolute;
     box-shadow: 0px 0px 10px gray;
     right: 0%;
-    margin-right: 20px;
+    margin-right: 350px;
     float: right;
+    width: 320px;
+    height: 200px;
 }
 
 .flagContainer {
