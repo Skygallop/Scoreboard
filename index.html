@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" type="module"></script>
+
+	<script src="./js/Flagger.js" type="module"></script>
 
 	<div id="title">
 		<h1>QATAR</h1>
@@ -16,20 +19,101 @@
 
 	<h1 id="timer" style="text-align: center;">00:00</h1>
 
+	
+	<div class="flagContainer">
+		<img src="" alt="" id="teamOneFlag" width="200px" >
+		<img src="" alt="" id="teamTwoFlag" width="200px" >
+	</div>
+	<!-- The actual application -->
+
+	<select name="Countries" id="teamOneDrop" onchange="">
+		<option value="SELECT">SELECT</option>
+		<option value="Costa_Rica">Costa Rica</option>
+		<option value="Australia">Australia</option>
+		<option value="Wales">Wales</option>
+		<option value="Mexico">Mexico</option>
+		<option value="USA">USA</option>
+		<option value="Cameroon">Cameroon</option>
+		<option value="Morocco">Morocco</option>
+		<option value="Tunisia">Tunisia</option>
+		<option value="Poland">Poland</option>
+		<option value="Portugal">Portugal</option>
+		<option value="Senegal">Senegal</option>
+		<option value="Ghana">Ghana</option>
+		<option value="Canada">Canada</option>
+		<option value="Uruguay">Uruguay</option>
+		<option value="Ecuador">Ecuador</option>
+		<option value="Saudi_Arabia">Saudi Arabia</option>
+		<option value="Japan">Japan</option>
+		<option value="South_Korea">South_Korea</option>
+		<option value="Iran">Iran</option>
+		<option value="Argentina">Argentina</option>
+		<option value="Netherlands">Netherlands</option>
+		<option value="Switzerland">Switzerland</option>
+		<option value="England">England</option>
+		<option value="Serbia">Serbia</option>
+		<option value="Spain">Spain</option>
+		<option value="Croatia">Croatia</option>
+		<option value="Belgium">Belgium</option>
+		<option value="France">France</option>
+		<option value="Brazil">Brazil</option>
+		<option value="Denmark">Denmark</option>
+		<option value="Germany">Germany</option>
+		<option value="Qatar">Qatar</option>
+	</select>
+
+	<select name="Countries" id="teamTwoDrop" >
+		<option value="SELECT">SELECT</option>
+		<option value="Costa_Rica">Costa Rica</option>
+		<option value="Australia">Australia</option>
+		<option value="Wales">Wales</option>
+		<option value="Mexico">Mexico</option>
+		<option value="USA">USA</option>
+		<option value="Cameroon">Cameroon</option>
+		<option value="Morocco">Morocco</option>
+		<option value="Tunisia">Tunisia</option>
+		<option value="Poland">Poland</option>
+		<option value="Portugal">Portugal</option>
+		<option value="Senegal">Senegal</option>
+		<option value="Ghana">Ghana</option>
+		<option value="Canada">Canada</option>
+		<option value="Uruguay">Uruguay</option>
+		<option value="Ecuador">Ecuador</option>
+		<option value="Saudi_Arabia">Saudi Arabia</option>
+		<option value="Japan">Japan</option>
+		<option value="South_Korea">South_Korea</option>
+		<option value="Iran">Iran</option>
+		<option value="Argentina">Argentina</option>
+		<option value="Netherlands">Netherlands</option>
+		<option value="Switzerland">Switzerland</option>
+		<option value="England">England</option>
+		<option value="Serbia">Serbia</option>
+		<option value="Spain">Spain</option>
+		<option value="Croatia">Croatia</option>
+		<option value="Belgium">Belgium</option>
+		<option value="France">France</option>
+		<option value="Brazil">Brazil</option>
+		<option value="Denmark">Denmark</option>
+		<option value="Germany">Germany</option>
+		<option value="Qatar">Qatar</option>
+	</select>
+
 	<div id="mediaGroup" style="text-align: center;">
 		<button class="mediaButtons" style="font-weight: 1000;">||</button>
 		<button class="mediaButtons" style="font-weight: 1000;">></button>
 		<button class="mediaButtons" style="font-weight: 1000;">↺</button>
 	</div>
 
-	<!-- The actual application -->
-	<div id="scoreboard"></div>
+	<div id="names"></div>
+
 	<script src="./js/main.js" type="module"></script>
+
+	<div id="scoreboard"></div>
 	<script src="./js/MediaButtons.js" type="module"></script>
 
 	<h3 style="text-align: center;">LOGGER</h3>
 
-	<textarea id="inputBox" style="resize: none;"></textarea>
+	<textarea id="inputBox" readonly="true" style="resize: none;"></textarea>
 
 	<footer style="position: fixed; top: 100%; margin-top: -25px;">By Skygallop | Continued by Robatortas</footer>
 </body>

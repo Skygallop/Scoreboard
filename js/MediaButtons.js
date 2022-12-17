@@ -12,7 +12,6 @@ var isReset= false;
 var timer = 0;
 var milis = 0;
 
-console.log("MEDIABUTTONS IS ALIVE!");
 let start = root.querySelectorAll(".mediaButtons").forEach(mediaButton => {
     mediaButton.addEventListener("click", () => {
 
