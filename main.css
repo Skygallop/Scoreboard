@@ -157,6 +157,15 @@ select {
         height: 23vw;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #teamOneDrop {
+        width: 43vw;
+     }
+     #teamTwoDrop {
+        width: 43vw;
+     }
+}
 img[src=""] {
     display: none;
 }
