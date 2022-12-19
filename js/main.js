@@ -1,12 +1,15 @@
+/*
+	Code is written like shit.
+	I'm still going to clean up this code another time!
+*/
+
 import ScoreboardView from "./ScoreboardView.js";
 
 const inputBox = document.querySelector("#inputBox");
 const timer = document.querySelector("#timer");
 
 let playerOneScore=0, playerTwoScore=0;
-let playerOneName=document.getElementById("teamOneDrop"), playerTwoName=document.querySelector("#teamTwoDrop");	
-
-
+let playerOneName=document.querySelector("#teamOneDrop"), playerTwoName=document.querySelector("#teamTwoDrop");	
 
 // The id that will contain all the css stuff
 const root = document.querySelector("#scoreboard");
@@ -37,16 +40,26 @@ let view = new ScoreboardView(root, playerOneName, playerTwoName, (player, direc
 	view.update(playerOneScore, playerTwoScore);
 })
 
+$("#teamOneDrop").on("change", function () {
+    upd();
+});
+$("#teamTwoDrop").on("change", function () {
+    upd();
+});
 
-// THINGS THAT GET REFRESHED!
-setInterval(() => {
-	playerOneName = document.querySelector("#teamOneDrop").value;
-	playerTwoName = document.querySelector("#teamTwoDrop").value;
-
-	names.innerHTML = `
-			<div class="scoreboard">
-				<div class="scoreboard__name scoreboard__name--one">${playerOneName}</div>
-				<div class="scoreboard__name scoreboard__name--two">${playerTwoName}</div>
-			</div>
-					`;
-}, 100);
+playerOneName = document.querySelector("#teamOneDrop").value;
+playerTwoName = document.querySelector("#teamTwoDrop").value;
+function upd () {
+	var interval = setInterval(() => {
+		playerOneName = document.querySelector("#teamOneDrop").value;
+		playerTwoName = document.querySelector("#teamTwoDrop").value;
+		names.innerHTML = `
+				<div class="scoreboard">
+					<div class="scoreboard__name scoreboard__name--one" style="text-overflow:ellipsis; overflow:hidden">${playerOneName}</div>
+					<div class="scoreboard__name scoreboard__name--two" style="text-overflow:ellipsis; overflow:hidden">${playerTwoName}</div>
+				</div>
+						`;
+		clearInterval(interval);
+	}, 10);
+}
+upd();

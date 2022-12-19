@@ -61,8 +61,9 @@ body {
 
 .mediaButtons {
     border: none;
-    width: 5vw;
-    height: 3vh;
+    width: 10vw;
+    height: 5vh;
+    margin-top: 10px;
 }
 .mediaButtons:hover {
     background-color: #eb718f;
@@ -101,8 +102,8 @@ select {
 }
 #teamOneDrop {
     position: relative;
-    /* float: left; */
     left: 20px;
+    margin-top: 10px;
     background-color: #eee;
     border: none;
     appearance: none;
@@ -111,6 +112,7 @@ select {
 
 #teamTwoDrop {
     position: relative;
+    margin-top: 10px;
     float: right;
     right: 20px;
     background-color: #eee;
@@ -120,18 +122,18 @@ select {
 }
 
 #teamOneFlag {
-    position: absolute;
+    position: relative;
     box-shadow: 0px 0px 10px gray;
-    margin-left: 350px;
+    margin-left: 15vw;
     float: left;
     width: 320px;
     height: 200px;
 }
 #teamTwoFlag {
-    position: absolute;
+    position: relative;
     box-shadow: 0px 0px 10px gray;
     right: 0%;
-    margin-right: 350px;
+    margin-right: 15vw;
     float: right;
     width: 320px;
     height: 200px;
@@ -139,4 +141,39 @@ select {
 
 .flagContainer {
     height: 230px;
+    /* max-height: 230px; */
+}
+#scoreboard {
+    font-size: 10px;
+}
+@media screen and (max-width: 1000px) {
+    #teamOneFlag {
+        width: 33.2%;
+        height: 20vw;
+    }
+    #teamTwoFlag {
+        width: 33.2%;
+        height: 20vw;
+    }
+    .flagContainer {
+        height: 23vw;
+    }
+    .scoreboard__name--one {
+        font-size: 3.2vw;
+    }
+    .scoreboard__name--two {
+        font-size: 3.2vw;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    #teamOneDrop {
+        width: 40%;
+     }
+     #teamTwoDrop {
+        width: 40%;
+     }
+}
+img[src=""] {
+    display: none;
 }
