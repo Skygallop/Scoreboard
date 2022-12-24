@@ -20,19 +20,19 @@ let view = new ScoreboardView(root, playerOneName, playerTwoName, (player, direc
 		playerOneScore = Math.max(playerOneScore + difference, 0);
 		if(difference == 1) {
 			console.log("TEAM ONE SCORED 1 GOAL!");
-			inputBox.textContent += timer.textContent + " - " + playerOneName + " (" + playerOneScore + "-" + playerTwoScore + ")\n"
+			inputBox.textContent += timer.textContent + " - " + playerOneName + " has scored! " + " (" + playerOneScore + "-" + playerTwoScore + ")\n"
 		} else if(difference == -1) {
 			console.log("TEAM ONE GOT A GOAL REVOKED!");
-			inputBox.textContent += timer.textContent + " - " + playerOneName + " (" + playerOneScore + "-" + playerTwoScore + ")\n"
+			inputBox.textContent += timer.textContent + " - " + playerOneName + " has had a goal revoked by VAR! " + " (" + playerOneScore + "-" + playerTwoScore + ")\n"
 		}
 	} else if(player === "two"){
 		playerTwoScore = Math.max(playerTwoScore + difference, 0);
 		if(difference == 1) {
 			console.log("TEAM TWO SCORED 1 GOAL!");
-			inputBox.textContent += timer.textContent + " - " + playerTwoName + " (" + playerOneScore + "-" + playerTwoScore + ")\n"
+			inputBox.textContent += timer.textContent + " - " + playerTwoName + " has scored! " + " (" + playerOneScore + "-" + playerTwoScore + ")\n"
 		} else if(difference == -1) {
 			console.log("TEAM TWO GOT A GOAL REVOKED!");
-			inputBox.textContent += timer.textContent + " - " + playerTwoName + " (" + playerOneScore + "-" + playerTwoScore + ")\n"
+			inputBox.textContent += timer.textContent + " - " + playerTwoName + " has had a goal revoked by VAR! " + " (" + playerOneScore + "-" + playerTwoScore + ")\n"
 		}
 	}
 	

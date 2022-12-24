@@ -108,6 +108,7 @@ select {
     border: none;
     appearance: none;
     text-align: center;
+    font-family: 'qatar';
 }
 
 #teamTwoDrop {
@@ -119,6 +120,7 @@ select {
     border: none;
     appearance: none;
     text-align: center;
+    font-family: 'qatar';
 }
 
 #teamOneFlag {
@@ -176,4 +178,52 @@ select {
 }
 img[src=""] {
     display: none;
+}
+
+.personalbuttons{
+    border: none;
+    width: 3vw;
+    height: 5vh;
+    float: left;
+    font-weight: 1000;
+    font-family: 'qatar';
+    font-size: 16px;
+}
+.personalbuttons:hover {
+    background-color: #eb718f;
+}
+.personalbuttons:active {
+    background-color: #ed1c51;
+}
+
+.personalbuttons2{
+    border: none;
+    width: 3vw;
+    height: 5vh;
+    float: right;
+    font-weight: 1000;
+    font-family: 'qatar';
+    font-size: 16px;
+
+}
+.personalbuttons2:hover {
+    background-color: #eb718f;
+}
+.personalbuttons2:active {
+    background-color: #ed1c51;
+}
+
+.VARbuttons{
+    border: none;
+    height: 5vh;
+    font-weight: 1000;
+    font-family: 'qatar';
+    font-size: 16px;
+    margin-left: 50%;
+}
+.VARbuttons:hover {
+    background-color: #eb718f;
+}
+.VARbuttons:active {
+    background-color: #ed1c51;
 }
