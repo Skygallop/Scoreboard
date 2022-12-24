@@ -25,13 +25,21 @@ async function getText() {
             if(type.indexOf("text") !== 1) {
                 var array = request.responseText.split("\n");
                 for(var i = 0; i < array.length; i++) {
-                    if(array[i].toString().includes(playerOneName)) {
-                        document.getElementById("teamOneFlag").src = array[i].toString();
-                        clearInterval(interval);
+                    var img = array[i];
+                    for(var j = 0; j < img.length; j++) {
+                        var dir = img.substring(0, img.lastIndexOf("/")+1);
+                        var fileExtension = img.substring(img.lastIndexOf("."));
+                        var queriedImage = dir+playerOneName+fileExtension;
+                        console.log();
+                        if(img == queriedImage) document.getElementById("teamOneFlag").src = queriedImage;
                     }
-                    if(array[i].toString().includes(playerTwoName)) {
-                        document.getElementById("teamTwoFlag").src = array[i].toString();
-                        clearInterval(interval);
+
+                    for(var j = 0; j < img.length; j++) {
+                        var dir = img.substring(0, img.lastIndexOf("/")+1);
+                        var fileExtension = img.substring(img.lastIndexOf("."));
+                        var queriedImage = dir+playerTwoName+fileExtension;
+                        console.log();
+                        if(img == queriedImage) document.getElementById("teamTwoFlag").src = queriedImage;
                     }
                 }
             }
@@ -39,7 +47,7 @@ async function getText() {
     }
     // SECURITY MEASURE
     clearInterval(interval);
-}, 10);
+}, 1);
 }
 
 $("#teamOneDrop").on("change", function () {
