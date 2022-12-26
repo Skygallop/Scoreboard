@@ -14,7 +14,7 @@ let playerOneScore=0, playerTwoScore=0;
             if(personalbutton.textContent == "M") {
                 console.log("MALPRACTICE!");
 
-                inputBox.textContent += timer.textContent + " - " + playerOneName + " has commit a malpractice! " +(" Anull both current and next turn for" + playerOneName)+"\n";
+                inputBox.textContent += timer.textContent + " - " + playerOneName + " has commit a malpractice! " +(" Anull both current and next turn for" +  playerOneName)+"\n";
             }
     
              // PARTY FOUL
@@ -22,7 +22,7 @@ let playerOneScore=0, playerTwoScore=0;
                 console.log("PARTYFOUL!");
                 
                 document.getElementById("timer").textContent= "00:00"; 
-                inputBox.textContent += timer.textContent + " - " + playerOneName + " has commit a party foul! " +(" Anull both current and next turn for" + playerOneName)+"\n";
+                inputBox.textContent += timer.textContent + " - " + playerOneName + " has commit a party foul! " +(" Anull both current and next turn for" +  playerOneName)+"\n";
             }
             
             
@@ -31,6 +31,14 @@ let playerOneScore=0, playerTwoScore=0;
                 console.log("HANDFOUL!");
                 inputBox.textContent += timer.textContent + " - " + playerOneName + " has commit a hand foul! - " + "Game end!" + " (" + "0" + "-" + "5" + ")\n";
                 }
+              
+                // MISS
+            if(personalbutton.textContent == "MISS") {
+                console.log("HANDFOUL!");
+                inputBox.textContent += timer.textContent + " - " + playerOneName + " has missed their shot!" + " ❌" +"\n";
+                }
+            
+            
                 })
         }) 
 
@@ -40,14 +48,14 @@ let playerOneScore=0, playerTwoScore=0;
                 // MALPRACTICE
                 if(personalbutton2.textContent == "M") {
                     console.log("MALPRACTICE!");
-                    inputBox.textContent += timer.textContent + " - " + playerTwoName + " has commit a malpractice!" +(" Anull both current and next turn for" + playerOneName)+ "\n";
+                    inputBox.textContent += timer.textContent + " - " + playerTwoName + " has commit a malpractice!" +(" Anull both current and next turn for" + playerTwoName)+ "\n";
                 }
         
                  // PARTY FOUL
                 if(personalbutton2.textContent == "P") {
                     console.log("PARTYFOUL!");
                     
-                    inputBox.textContent += timer.textContent + " - " + playerTwoName + " has commit a party foul! " +(" Anull both current and next turn for" + playerOneName)+"\n";
+                    inputBox.textContent += timer.textContent + " - " + playerTwoName + " has commit a party foul! " +(" Anull both current and next turn for" + playerTwoName)+"\n";
                 }
                 
                 
@@ -56,6 +64,13 @@ let playerOneScore=0, playerTwoScore=0;
                     console.log("HANDFOUL!");
                     inputBox.textContent += timer.textContent + " - " + playerTwoName + " has commit a hand foul! - " + "Game end!" + " (" + "5" + "-" + "0" + ")\n";
                     }
+
+                 // MISS
+                 if(personalbutton2.textContent == "MISS") {
+                    console.log("MISS!");
+                    
+                    inputBox.textContent += timer.textContent + " - " + playerTwoName + " has missed their shot! " + "❌" + "\n";
+                }
                     })
             })
     

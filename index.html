@@ -19,7 +19,7 @@
 		<h3>Road to Mexico City</h3>
 	</div>
 
-	<h1 id="timer" style="text-align: center;">00:00</h1>
+	
 
 	
 	<div class="flagContainer">
@@ -111,7 +111,7 @@
 		<option value="Greece">Greece</option>
 		<option value="Grenada">Grenada</option>
 		<option value="Guadeloupe">Guadeloupe</option>
-		<option value="Guam">guam</option>
+		<option value="Guam">Guam</option>
 		<option value="Guatemala">Guatemala</option>
 		<option value="Guinea">Guinea</option>
 		<option value="Guinea_Bissau">Guinea_Bissau</option>
@@ -129,7 +129,7 @@
 		<option value="Israel">Israel</option>
 		<option value="Italy">Italy</option>
 		<option value="Jamaica">Jamaica</option>
-		<option value="Japan">japan</option>
+		<option value="Japan">Japan</option>
 		<option value="Jordan">Jordan</option>
 		<option value="Kazakhstan">Kazakhstan</option>
 		<option value="Kenya">Kenya</option>
@@ -254,6 +254,18 @@
 		<option value="Zanzibar">Zanzibar</option>
 		<option value="Zambia">Zambia</option>
 		<option value="Zimbabwe">Zimbabwe</option>
+		<option value="WORLDBUILDING">-SELECT-</option>
+		<option value="Dalia">Dalia</option>
+		<option value="Prussian_Commonwealth">Prussian_Commonwealth</option>
+		<option value="Ru3btla">Ru3btla</option>
+		<option value="Sessia">Sessia</option>
+		<option value="Suforan">Suforan</option>
+		<option value="Ceverelya">Ceverelya</option>
+		<option value="Filissia">Filissia</option>
+		<option value="Achtenheim">Achtenheim</option>
+		<option value="Inner_Sessia">Inner_Sessia</option>
+		<option value="Szesznya">Szesznya</option>
+
 	</select>
 
 	<select name="Countries" id="teamTwoDrop" >
@@ -483,7 +495,20 @@
 		<option value="Zanzibar">Zanzibar</option>
 		<option value="Zambia">Zambia</option>
 		<option value="Zimbabwe">Zimbabwe</option>
+		<option value="WORLDBUILDING">-SELECT-</option>
+		<option value="Dalia">Dalia</option>
+		<option value="Prussian_Commonwealth">Prussian_Commonwealth</option>
+		<option value="Ru3btla">Ru3btla</option>
+		<option value="Sessia">Sessia</option>
+		<option value="Suforan">Suforan</option>
+		<option value="Ceverelya">Ceverelya</option>
+		<option value="Filissia">Filissia</option>
+		<option value="Achtenheim">Achtenheim</option>
+		<option value="Inner_Sessia">Inner_Sessia</option>
+		<option value="Szesznya">Szesznya</option>
 	</select>
+
+	<h1 id="timer" style="text-align: center;">00:00</h1>
 
 	<div id="mediaGroup" style="text-align: center;">
 		<button class="mediaButtons" style="font-weight: 1000;">||</button>
@@ -502,24 +527,50 @@
 		<button class="personalbuttons">M</button>
 		<button class="personalbuttons">P</button>
 		<button class="personalbuttons">H</button>
+		<button class="personalbuttons">MISS</button>
 	
+		<button class="personalbuttons2">MISS</button>
 		<button class="personalbuttons2">H</button>
 		<button class="personalbuttons2">P</button>
 		<button class="personalbuttons2">M</button>
 		</div>
 		<script src="./js/PersonalButtons.js" type="module"></script>
 
-	<h3 style="text-align: center;">LOGGER</h3>
+		<br>
+
+		<div id="lineGroup">
+			<button class="linebuttons">1ST</button>
+			<button class="linebuttons">2ND</button>
+			<button class="linebuttons">IMP</button>
+		
+			<button class="linebuttons2">IMP</button>
+			<button class="linebuttons2">2ND</button>
+			<button class="linebuttons2">1ST</button>
+			</div>
+			<script src="./js/LineButtons.js" type="module"></script>
+
+	<h3 style="text-align: center;">LIVE TICKER</h3>
 
 	<textarea id="inputBox" readonly="true" style="resize: none;"></textarea>
 
 	<div id="VARGroup">
-		<h3 style="text-align: center;">VAR</h3>
-		<button class="VARbuttons">Malpractice</button>
+		<h2 style="text-align: center;" id="VAR">VAR</h2>
+		<button class="VARbuttons">Goal</button>
 		<button class="VARbuttons">PartyFoul</button>
 		<button class="VARbuttons">HandFoul</button>
+		<button class="VARbuttons">AccidentalTouch</button>
 		</div>
 		<script src="./js/VAR.js" type="module"></script>
+
+		<br>
+
+		<div id="AdvGroup">
+			<h2 style="text-align: center;" id="ADV">Advantage Settings</h2>
+			<button class="Advbuttons">AWAY</button>
+			<button class="Advbuttons"> - </button>
+			<button class="Advbuttons">HOME</button>
+			</div>
+			<script src="./js/Advantage.js" type="module"></script>
 
 		<br>
 

@@ -10,18 +10,18 @@ let playerOneScore=0, playerTwoScore=0;
         VARbutton.addEventListener("click", () => {
     
             
-            // MALPRACTICE
-            if(VARbutton.textContent == "Malpractice") {
-                console.log("MALPRACTICE!");
+            // GOALCHECK
+            if(VARbutton.textContent == "Goal") {
+                console.log("GOALCHECK!");
 
-                inputBox.textContent += timer.textContent + " - " + "VAR is being checked for a malpractice! \n";
+                inputBox.textContent += timer.textContent + " - " + "VAR is being checked for a possible goal! 🚩 \n";
             }
     
              // PARTY FOUL
             if(VARbutton.textContent == "PartyFoul") {
                 console.log("PARTYFOUL!");
                 
-                inputBox.textContent += timer.textContent + " - " + "VAR is being checked for a party foul! \n";
+                inputBox.textContent += timer.textContent + " - " + "VAR is being checked for a possible party foul! 🚩 \n";
             }
             
             
@@ -29,8 +29,16 @@ let playerOneScore=0, playerTwoScore=0;
             if(VARbutton.textContent == "HandFoul") {
                 console.log("HANDFOUL!");
 
-                inputBox.textContent += timer.textContent + " - " + "VAR is being checked for a hand foul! \n";
+                inputBox.textContent += timer.textContent + " - " + "VAR is being checked for a posible hand foul! 🚩 \n";
                 }
+
+                // ACCIDENTAL TOUCHING
+            if(VARbutton.textContent == "AccidentalTouch") {
+                console.log("ACCIDENTALTOUCH!");
+
+                inputBox.textContent += timer.textContent + " - " + "VAR is being checked for a possible accidental touch! 🚩 \n";
+                }
+
                 })
         }) 
 
